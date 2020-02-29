@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="258dp"
+        android:background="#808080"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txtContent"
+            android:layout_width="match_parent"
+            android:layout_height="211dp"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:paddingLeft="5dp"
+            android:paddingTop="3dp" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="Save Note"
+            android:textColor="#010b13"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#add827"
+            android:text="Note List: "
+            android:textColor="#010b13"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/noteList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#add827"
+            android:cacheColorHint="#00448AFF"
+            android:divider="#010b13"
+            android:dividerHeight="1dp">
+
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>
